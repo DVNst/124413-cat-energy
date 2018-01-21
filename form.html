@@ -27,7 +27,7 @@
             </li>
 
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -36,21 +36,68 @@
   </header>
 
   <main class="page-main">
-    <section class="">
-      <h1 class="__title"></h1>
+    <section class="questionary">
+      <h1 class="questionary__title">Подбор программы</h1>
+
+      <p class="questionary__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="questionary__form form">
+        <h2 class="visually-hidden">Анкета</h2>
+
+        <fieldset class="form__cat-info">
+          <h3 class="visually-hidden">Информация о коте</h3>
+
+          <label class="form__name">Имя:*<input type="text" required placeholder="Барсик"></label>
+          <label class="form__weight">Вес (кг):*<input type="text" required placeholder="7"></label>
+          <label class="form__years">Возраст (лет):*<input type="text" required placeholder="7"></label>
+        </fieldset>
+
+        <fieldset class="form__cat-info">
+          <h3 class="visually-hidden">Выбор программы</h3>
+
+          <label class="form__program"><input type="radio" name="program" value="loss" checked>Похудение</label>
+          <label class="form__program"><input type="radio" name="program" value="mass">Набор массы</label>
+          <label class="form__program"><input type="radio" name="program" value="consultation">Не знаю (нужен ваш совет)</label>
+        </fieldset>
+
+        <fieldset class="form__contacts">
+          <h3 class="form__title">Контактные данные (владельца кота)</h3>
+
+          <label class="form__email">E-mail:*<input type="email" name="email" required placeholder="kuklachev@gmail.com"></label>
+          <label class="form__phone">Телефон:*<input type="tel" name="phone" required placeholder="8 (960) 900-60-90"></label>
+        </fieldset>
+
+        <fieldset class="form__comments">
+          <h3 class="form__title">Коментарий</h3>
+
+          <textarea class="form__comment" rows="10" cols="45" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="form__products-other">
+          <h3 class="form__title">Дополнительно</h3>
+
+          <label class="form__product-other"><input type="checkbox" name="product-other-sweetener" checked>Сахарозаменитель</label>
+          <label class="form__product-other"><input type="checkbox" name="product-other-water">Питьевая вода</label>
+          <label class="form__product-other"><input type="checkbox" name="product-other-milk">Молоко</label>
+          <label class="form__product-other"><input type="checkbox" name="product-other-vitamins">Витамины</label>
+        </fieldset>
+
+        <input type="submit" value="Отправить заявку">
+        <p class="form__legend">* &#8212; Обязательные поля</p>
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
     <h2 class="visually-hidden">Контакты</h2>
 
-    <div class="page-footer__contacts contans">
-      <b class="contans__text">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="contans__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="page-footer__contacts contacts">
+      <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
 
     <div class="page-footer__map map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516392176027" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516392176027" width="600" height="450" style="border:0" allowfullscreen></iframe>
     </div>
 
     <div class="page-footer__logo logo">
