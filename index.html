@@ -114,9 +114,11 @@
 
       <div class="example__progress progress">
         <p class="progress__wrapper">
-          <button class="progress__text">Было</button>
-          <progress value="50" max="100" class="progress__line">прогресс</progress>
-          <button class="progress__text">Стало</button>
+          <input type="radio" name="progress-btn" class="visually-hidden" id="before" checked>
+          <label for="before" class="progress__text">Было</label>
+
+          <input type="radio" name="progress-btn" class="visually-hidden" id="after">
+          <label for="after" class="progress__text">Стало</label>
         </p>
       </div>
 
@@ -127,7 +129,7 @@
     <h2 class="visually-hidden">Контакты</h2>
 
     <div class="page-footer__contacts contacts">
-      <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
+      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
 
