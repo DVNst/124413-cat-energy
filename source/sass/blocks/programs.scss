@@ -1,0 +1,32 @@
+.programs {
+  background-color: $bg;
+}
+
+.programs__list {
+  list-style: none;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+
+  background-color: $bg-grey;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-title;
+}
+
+.programs__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+}
+
+.programs__btn {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-text;
+}
