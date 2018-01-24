@@ -1,5 +1,5 @@
 .programs {
-  background-color: $bg;
+  background-color: $bg-white;
 }
 
 .programs__list {
@@ -16,17 +16,15 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $color-title;
+  color: $text-darkgrey;
 }
 
 .programs__text {
   font-size: 14px;
   line-height: 18px;
-  color: $color-text;
+  color: $text-grey;
 }
 
 .programs__btn {
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-text;
+  width: 100%;
 }

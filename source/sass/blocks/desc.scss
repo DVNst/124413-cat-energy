@@ -1,0 +1,30 @@
+.desc {
+  padding: 25px 20px;
+  height: 400px;
+
+  background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%, url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-color: #ffffff;
+  color: $text-white;
+}
+
+.desc__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: $text-white;
+  text-align: center;
+}
+
+.desc__slogan {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $text-white;
+  text-align: center;
+}

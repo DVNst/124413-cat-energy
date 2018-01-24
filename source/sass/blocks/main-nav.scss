@@ -1,0 +1,51 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background: $bg-white url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+
+  cursor: pointer;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-grey;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--active {
+    border-bottom: 1px solid $green;
+  }
+}

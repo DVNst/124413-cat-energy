@@ -1,31 +1,62 @@
-@import "variables.scss";
-@import "blocks/visually-hidden.scss";
-@import "blocks/btn.scss";
+@import "variables";
 
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
+  //font-style: normal;
+}
 
-@import "blocks/page-main.scss";
-@import "blocks/desc.scss";
-@import "blocks/programs.scss";
-@import "blocks/features.scss";
-@import "blocks/example.scss";
-@import "blocks/progress.scss";
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
+  font-weight: bold;
+  //font-style: normal;
+}
 
-@import "blocks/page-footer.scss";
-@import "blocks/contacts.scss";
-@import "blocks/map.scss";
-@import "blocks/logo.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
+body {
+  max-width: 320px;
 
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-grey;
+  //text-transform: uppercase;
 
-@import "blocks/catalog.scss";
-@import "blocks/product.scss";
-@import "blocks/more.scss";
-@import "blocks/catalog-other.scss";
-@import "blocks/product-other.scss";
-@import "blocks/offer.scss";
+  background-color: $bg-white;
+}
 
-@import "blocks/questionary.scss";
-@import "blocks/form.scss";
+a {
+  text-decoration: none;
+}
+
+img {
+  //width: 100%;
+  //height: auto;
+}
+
+@import "blocks/visually-hidden";
+@import "blocks/btn";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-main";
+@import "blocks/desc";
+@import "blocks/programs";
+@import "blocks/features";
+@import "blocks/example";
+@import "blocks/progress";
+@import "blocks/page-footer";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/logo";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/more";
+@import "blocks/catalog-other";
+@import "blocks/product-other";
+@import "blocks/offer";
+@import "blocks/questionary";
+@import "blocks/form";
