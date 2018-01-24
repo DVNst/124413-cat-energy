@@ -2,36 +2,71 @@
   position: relative;
 }
 
+.main-nav__logo {
+  position: relative;
+  margin: 0 20px;
+  padding: 24px 0 22px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 38px;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-22px);
+    background: url("../img/icon-logo-mobile.svg") no-repeat 0 50%;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  width: 20px;
-  height: 20px;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
 
   border: none;
-  background: $bg-white url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
 
   cursor: pointer;
+
+  &--menu {
+    background: $bg-white url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  }
+
+  &--close {
+    background: $bg-white url("../img/icon-close.svg") no-repeat 50% 50%;
+  }
 }
 
 .main-nav__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .main-nav__item {
-  padding: 0;
+  display: block;
   margin: 0;
-  margin-bottom: 20px;
+  padding: 22px 20px;
+
+  border-bottom: 1px solid $lightgrey;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:first-child {
+    border-top: 1px solid $lightgrey;
+  }
 }
 
 .main-nav__link {
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: $text-grey;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.75;

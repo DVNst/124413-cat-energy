@@ -1,41 +1,5 @@
 @import "variables";
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: normal;
-  //font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
-  font-weight: bold;
-  //font-style: normal;
-}
-
-body {
-  max-width: 320px;
-
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-grey;
-  //text-transform: uppercase;
-
-  background-color: $bg-white;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  //width: 100%;
-  //height: auto;
-}
-
+@import "general";
 @import "blocks/visually-hidden";
 @import "blocks/btn";
 @import "blocks/page-header";

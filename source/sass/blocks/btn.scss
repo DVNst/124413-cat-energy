@@ -1,13 +1,23 @@
 .btn {
+  display: block;
   margin: 0;
-  padding: 8px;
+  padding: 11px;
 
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
 
   background-color: $green;
   color: $text-white;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    background-color: $greendark;
+  }
+
+  &:active {
+    background-color: $greendark;
+    color: #99c684;
+  }
 }

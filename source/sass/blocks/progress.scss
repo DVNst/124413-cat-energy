@@ -1,3 +1,46 @@
 .progress {
   //color: red;
 }
+
+.progress__wrapper {
+  margin: 0;
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.progress__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.progress__bar {
+  position: relative;
+  display: inline-block;
+
+  margin: 0 15px 0 17px;
+  width: 82px;
+  height: 12px;
+
+  border: 1px solid $grey;
+  border-radius: 5px;
+
+  background-color: $bg-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 35px;
+    height: 6px;
+
+    top: 3px;
+    left: 5px;
+
+    border-radius: 5px;
+
+    background-color: $green;
+  }
+}
