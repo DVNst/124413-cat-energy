@@ -6,18 +6,24 @@
   margin: 0;
   padding: 0 20px;
 
-  text-align: center;
+  display: flex;
+  //justify-content: center;
+  //text-align: center;
 }
 
 .progress__text {
+  width: 33%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 .progress__bar {
   position: relative;
-  display: inline-block;
+  //display: inline-block;
 
   margin: 0 15px 0 17px;
   width: 82px;
@@ -27,6 +33,8 @@
   border-radius: 5px;
 
   background-color: $bg-white;
+
+  cursor: pointer;
 
   &::before {
     content: "";

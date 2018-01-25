@@ -1,16 +1,25 @@
 .desc {
   margin-bottom: 3px;
-  padding: 28px 20px;
-  height: 382px;
-
-  background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%, url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
-  //background-color: $green;
-  color: $text-white;
+  padding: 0;
+  padding-bottom: 133px;
 }
 
 .desc_wrapper {
-  //background: ;
-  //background-color: $white;
+  position: relative;
+  padding: 28px 20px 166px;
+
+  background: $green url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 280px;
+    height: 271px;
+    bottom: -133px;
+
+    background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+  }
 }
 
 .desc__title {
