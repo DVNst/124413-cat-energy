@@ -1,5 +1,12 @@
 .contacts {
+  //
+}
+
+.contacts__wrapper {
   display: flex;
+  padding: 27px 20px;
+
+  background-color: $bg-white;
 }
 
 .contacts__text {
@@ -17,4 +24,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
 }

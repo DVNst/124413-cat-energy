@@ -1,14 +1,14 @@
 .desc {
-  margin-bottom: 3px;
-  padding: 0;
-  padding-bottom: 133px;
+  //padding-bottom: 22px;
 }
 
 .desc_wrapper {
   position: relative;
-  padding: 28px 20px 166px;
+  margin-bottom: 135px;
+  padding: 27px 20px 166px;
 
   background: $green url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
+  color: $text-white;
 
   &::after {
     position: absolute;
@@ -29,7 +29,6 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-  color: $text-white;
   text-align: center;
 }
 
@@ -40,6 +39,9 @@
   line-height: 14px;
   font-weight: normal;
   text-transform: uppercase;
-  color: $text-white;
   text-align: center;
+}
+
+.desc__btn-form {
+  margin: 0 20px;
 }

@@ -1,55 +1,68 @@
 .main-nav {
   position: relative;
+  display: flex;
+
+  flex-direction: column;
 }
 
 .main-nav__logo {
-  position: relative;
-  margin: 0 20px;
-  padding: 24px 0 22px;
+  display: flex;
+  margin: 0 64px 0 20px;
+  padding: 11px 0 16px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 33px;
-    height: 38px;
-    top: 50%;
-    left: 0;
-
-    transform: translateY(-22px);
-    background: url("../img/icon-logo-mobile.svg") no-repeat 0 50%;
-  }
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 23px;
-  right: 20px;
-  width: 24px;
-  height: 18px;
+  padding: 0;
+  width: 64px;
+  height: 65px;
+
+  right: 0;
 
   border: none;
 
+  background-color: $bg-white;
   cursor: pointer;
 
-  &--menu {
-    background: $bg-white url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 23px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $bg-white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--close {
-    background: $bg-white url("../img/icon-close.svg") no-repeat 50% 50%;
+  &--menu::after {
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  &--close::after {
+    background-image: url("../img/icon-close.svg");
   }
 }
 
 .main-nav__list {
+  display: flex;
   padding: 0;
   margin: 0;
+
+  flex-direction: column;
+
   list-style: none;
 }
 
 .main-nav__item {
-  display: block;
   margin: 0;
-  padding: 22px 20px;
+  padding: 22.5px 20px;
 
   border-bottom: 1px solid $lightgrey;
 

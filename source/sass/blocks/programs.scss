@@ -1,40 +1,28 @@
 .programs {
-  margin: 0;
-  padding: 0 20px 20px;
-}
-
-.programs__btn-form {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
+  padding: 0 20px;
 }
 
 .programs__list {
+  display: flex;
   margin: 0;
   padding: 0;
+
+  flex-direction: column;
 
   list-style: none;
 }
 
 .programs__item {
-  margin-bottom: 22px;
-  padding: 0 19px;
+  position: relative;
+  margin-bottom: 19px;
+  padding: 31px 20px 0;
 
   background-color: $bg-grey;
 
   &:last-child {
     margin: 0;
   }
-}
-
-.programs__title {
-  position: relative;
-  margin: 0;
-  padding: 28px 0 29px 72px;
-
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: $text-darkgrey;
 
   &::before {
     position: absolute;
@@ -42,8 +30,8 @@
 
     width: 50px;
     height: 50px;
-    left: 3px;
-    top: 23px;
+    left: 22px;
+    top: 25px;
 
     border-radius: 50%;
     background-color: $green;
@@ -57,8 +45,8 @@
   &--loss::after {
     width: 35px;
     height: 49px;
-    left: 11px;
-    top: 20px;
+    left: 30px;
+    top: 23px;
 
     background: url("../img/icon-cat-slim.svg") no-repeat 50% 50%;
   }
@@ -66,11 +54,23 @@
   &--mass::after {
     width: 67px;
     height: 28px;
-    left: -6px;
-    top: 34px;
+    left: 13px;
+    top: 36px;
 
     background: url("../img/icon-cat-pro.svg") no-repeat 50% 50%;
   }
+}
+
+.programs__title {
+  position: relative;
+  margin: 0;
+  padding: 0 0 29px 70px;
+
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $text-darkgrey;
 }
 
 .programs__text {
@@ -92,7 +92,7 @@
   position: relative;
 
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0 22px;
 
   font-size: 16px;
   line-height: 16px;

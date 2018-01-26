@@ -3,29 +3,26 @@
 }
 
 .progress__wrapper {
-  margin: 0;
-  padding: 0 20px;
-
   display: flex;
-  //justify-content: center;
-  //text-align: center;
+  margin: 0;
+
+  justify-content: center;
+  text-align: center;
 }
 
 .progress__text {
-  width: 33%;
+  // width: 33%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   cursor: pointer;
-  border: 1px solid black;
 }
 
 .progress__bar {
   position: relative;
-  //display: inline-block;
 
-  margin: 0 15px 0 17px;
+  margin: 3px 19px 0 19px;
   width: 82px;
   height: 12px;
 
