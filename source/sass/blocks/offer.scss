@@ -1,3 +1,32 @@
 .offer {
-  //color: red;
+  border-top: 1px solid $grey;
+}
+
+.offer__wrapper {
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-top: 187px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  min-height: 289px;
+
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 55px 60px, 100% 100%;
+  background-position: 50% 65px, 50% 50%;
+  background-color: transparent, $green;
+
+  color: $text-white;
+  text-align: center;
+}
+
+.offer__desc {
+  margin: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 19px;
 }
