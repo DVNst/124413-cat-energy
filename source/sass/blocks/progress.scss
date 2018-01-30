@@ -1,0 +1,51 @@
+.progress {
+  //color: red;
+}
+
+.progress__wrapper {
+  display: flex;
+  margin: 0;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.progress__text {
+  // width: 33%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.progress__bar {
+  position: relative;
+
+  margin: 3px 19px 0 19px;
+  width: 82px;
+  height: 12px;
+
+  border: 1px solid $grey;
+  border-radius: 5px;
+
+  background-color: $bg-white;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 35px;
+    height: 6px;
+
+    top: 3px;
+    left: 5px;
+
+    border-radius: 5px;
+
+    background-color: $green;
+  }
+}

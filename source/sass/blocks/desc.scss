@@ -1,0 +1,47 @@
+.desc {
+  //padding-bottom: 22px;
+}
+
+.desc_wrapper {
+  position: relative;
+  margin-bottom: 135px;
+  padding: 27px 20px 166px;
+
+  background: $green url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
+  color: $text-white;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 280px;
+    height: 271px;
+    bottom: -133px;
+
+    background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+  }
+}
+
+.desc__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.desc__slogan {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.desc__btn-form {
+  margin: 0 20px;
+}

@@ -1,0 +1,15 @@
+.copyright__text {
+  letter-spacing: -0.023em;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $text-grey;
+}
