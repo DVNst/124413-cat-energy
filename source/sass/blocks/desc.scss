@@ -45,3 +45,50 @@
 .desc__btn-form {
   margin: 0 20px;
 }
+
+@media (min-width: 768px) {
+  .desc {
+    padding-bottom: 533px;
+    background: $bg-white url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+    background-size: 80% 70%;
+  }
+
+  .desc_wrapper {
+    margin-bottom: 24px;
+    padding-top: 58px;
+    padding-left: 118px;
+    padding-right: 118px;
+    padding-bottom: 20px;
+
+    background: none;
+    color: $text-darkgrey;
+
+    &::after {
+      background: none;
+    }
+  }
+
+  .desc__title {
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .desc__slogan {
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .desc__btn-form {
+    margin-left: 120px;
+    display: inline-block;
+    padding: 15px 29px 17px 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

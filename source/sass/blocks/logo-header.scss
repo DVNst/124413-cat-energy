@@ -5,3 +5,17 @@
 .logo-header__text {
   padding-top: 5px;
 }
+
+@media (min-width: 768px) {
+  .logo-header__image {
+    margin-right: 17px;
+
+    width: 71px;
+    height: 58px;
+  }
+
+  .logo-header__text {
+    width: 85px;
+    height: 17px;
+  }
+}
