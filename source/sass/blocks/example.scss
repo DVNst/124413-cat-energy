@@ -1,5 +1,6 @@
 .example {
   padding-top: 17px;
+  padding-bottom: 36px;
 
   background-color: $bg-grey;
 }
@@ -53,6 +54,7 @@
 .example__item {
   margin: 0;
   margin-bottom: 10px;
+  min-width: 124px;
 
   text-align: center;
 }
@@ -61,7 +63,6 @@
   padding: 13px 15px 17px;
 
   display: block;
-  //width: 92px;
 
   border: 1px solid $grey;
   border-radius: 2px;
@@ -115,17 +116,21 @@
 }
 
 .example__photo {
-  margin-bottom: 30px;
+  margin: 0 auto;
 }
 
 .example__progress {
-  padding-right: 20px;
-  padding-bottom: 36px;
-  padding-left: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
 }
 
 @media (min-width: 768px) {
   .example {
+    padding: 0;
     padding-top: 43px;
     border-top: 1px solid $lightgrey;
 
@@ -134,6 +139,7 @@
 
   .example__wrapper {
     padding: 0 30px;
+    margin-bottom: 58px;
   }
 
   .example__title {
@@ -166,14 +172,15 @@
   }
 
   .example__profit {
-    padding: 13px 13px 20px;
+    padding: 14px 13px 20px;
 
     font-size: 30px;
     line-height: 37px;
   }
 
   .example__subs {
-    top: -11px;
+    top: -13px;
+    padding: 0 5px;
 
     font-size: 14px;
     line-height: 14px;
@@ -181,11 +188,11 @@
     background-color: $bg-white;
 
     &--weight {
-      width: 113px;
+      width: 105px;
     }
 
     &--days {
-      width: 136px;
+      width: 132px;
     }
   }
 
@@ -201,5 +208,22 @@
     text-align: right;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .example__photo {
+    margin: 0;
+    padding: 0 46px 68px 45px;
+
+    background-color:: $white;
+    background-image: linear-gradient(transparent 28%, $bg-grey 28%);
+    color: black;
+    //background-image: linear-gradient(transparent 28%, #eaeaea 28%);
+  }
+
+  .example__image {
+    position: relative;
+    bottom: 0;
+    //left: 50%;
+    //transform: translateX(-50%);
   }
 }

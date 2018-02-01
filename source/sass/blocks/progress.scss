@@ -8,15 +8,39 @@
 
   justify-content: center;
   text-align: center;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    margin: 0 23px;
+  }
+}
+
+.progress-btn:focus + .progress__text {
+  outline: thin dotted;
+  //outline: 5px auto -webkit-focus-ring-color;
 }
 
 .progress__text {
-  // width: 33%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    margin-top: 4px;
+    padding-bottom: 6px;
+
+    font-size: 20px;
+    border-bottom: 1px dotted $grey;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
 }
 
 .progress__bar {
@@ -48,4 +72,18 @@
 
     background-color: $green;
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
+
+.progress__range {
+    display: none;
+    margin: 0 21px 0 24px;
+    flex-grow: 1;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
