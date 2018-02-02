@@ -1,5 +1,6 @@
 .range {
-  -webkit-appearance: none; //скрывает слайдер, чтобы можно было создать свой
+  appearance: none; //скрывает слайдер, чтобы можно было создать свой
+  //-webkit-appearance: none;
   background: transparent;
   border-color: transparent;
   color: transparent;
@@ -8,7 +9,8 @@
 
   //ползунок:
   &::-webkit-slider-thumb {
-    -webkit-appearance: none; //скрывает, чтобы можно было создать свой
+    appearance: none; //скрывает, чтобы можно было создать свой
+    //-webkit-appearance: none;
 
     margin-top: -12px;
     height: 30px;
@@ -18,7 +20,6 @@
     border-radius: 50%;
     background: $green;
     box-shadow: 0 0 0 1px $white, 0 0 0 2px $grey, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-
   }
 
   &::-webkit-slider-runnable-track {

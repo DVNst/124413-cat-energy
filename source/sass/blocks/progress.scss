@@ -79,11 +79,11 @@
 }
 
 .progress__range {
-    display: none;
-    margin: 0 21px 0 24px;
-    flex-grow: 1;
+  display: none;
+  margin: 0 21px 0 24px;
+  flex-grow: 1;
 
-    @media (min-width: 768px) {
-      display: block;
-    }
+  @media (min-width: 768px) {
+    display: block;
   }
+}

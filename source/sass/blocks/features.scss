@@ -34,6 +34,7 @@
   flex-direction: column;
 
   list-style: none;
+  counter-reset: item_number; //Инициируем счетчик
 
   @media (min-width: 768px) {
     margin-bottom: 12px;
@@ -103,7 +104,10 @@
 
     &::after {
       position: absolute;
-      content: "";
+
+      counter-increment: item_number; //Увеличиваем значение счетчика
+      content: counter(item_number);
+
       height: 228px;
       width: auto;
       bottom: 42px;
@@ -116,38 +120,6 @@
       font-size: 320px;
       line-height: 320px;
       color: $bg-grey;
-    }
-
-    &:nth-child(1)::after {
-      content: "1";
-    }
-
-    &:nth-child(2)::after {
-      content: "2";
-    }
-
-    &:nth-child(3)::after {
-      content: "3";
-    }
-
-    &:nth-child(4)::after {
-      content: "4";
-    }
-
-    &:nth-child(5)::after {
-      content: "5";
-    }
-
-    &:nth-child(6)::after {
-      content: "6";
-    }
-
-    &:nth-child(7)::after {
-      content: "7";
-    }
-
-    &:nth-child(8)::after {
-      content: "8";
     }
   }
 }
