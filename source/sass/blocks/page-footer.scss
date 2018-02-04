@@ -3,7 +3,7 @@
 }
 
 .page-footer__contacts {
-  position: relative;
+  //position: relative;
 }
 
 .page-footer__wrapper {
@@ -17,6 +17,12 @@
 
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: 1300px) {
+    margin: 0 auto;
+    padding: 48px 40px 55px;
+    max-width: 1220px;
   }
 }
 
@@ -32,6 +38,10 @@
     padding-top: 4px;
     border: none;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 12px;
+  }
 }
 
 .page-footer__social {
@@ -39,6 +49,7 @@
 
   @media (min-width: 768px) {
     padding: 0;
+    padding-top: 8px;
     border: none;
   }
 }

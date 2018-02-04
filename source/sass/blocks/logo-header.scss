@@ -8,6 +8,12 @@
     width: 71px;
     height: 58px;
   }
+
+  @media (min-width: 1300px) {
+    margin-right: 13px;
+    width: 71px;
+    height: 59px;
+  }
 }
 
 .logo-header__text {
@@ -18,5 +24,10 @@
   @media (min-width: 768px) {
     width: 85px;
     height: 17px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 118px;
+    height: 22px;
   }
 }

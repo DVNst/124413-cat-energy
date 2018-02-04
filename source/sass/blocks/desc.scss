@@ -1,5 +1,18 @@
 .desc {
-  //padding-bottom: 22px;
+  @media (min-width: 768px) {
+    padding-bottom: 533px;
+
+    background: $bg-white url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+    background-size: 80% 70%;
+  }
+
+  @media (min-width: 1300px) {
+    padding-bottom: 241px;
+
+    background-color: transparent;
+    background-position: 67% 28px;
+    background-size: 40% 78%;
+  }
 }
 
 .desc_wrapper {
@@ -20,40 +33,8 @@
 
     background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
   }
-}
 
-.desc__title {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 25px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.desc__slogan {
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.desc__btn-form {
-  margin: 0 20px;
-}
-
-@media (min-width: 768px) {
-  .desc {
-    padding-bottom: 533px;
-    background: $bg-white url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
-    background-size: 80% 70%;
-  }
-
-  .desc_wrapper {
+  @media (min-width: 768px) {
     margin-bottom: 24px;
     padding-top: 58px;
     padding-left: 118px;
@@ -64,26 +45,58 @@
     color: $text-darkgrey;
 
     &::after {
+      width: 0;
+      height: 0;
+      bottom: 0;
+
       background: none;
     }
   }
 
-  .desc__title {
+  @media (min-width: 1300px) {
+    margin-bottom: 53px;
+    padding: 109px 50% 0 120px;
+  }
+}
+
+.desc__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+
+  @media (min-width: 768px) {
     margin-bottom: 41px;
 
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
+}
 
-  .desc__slogan {
+.desc__slogan {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
 
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
   }
+}
 
-  .desc__btn-form {
+.desc__btn-form {
+  margin: 0 20px;
+
+  @media (min-width: 768px) {
     margin-left: 120px;
     display: inline-block;
     padding: 15px 29px 17px 25px;

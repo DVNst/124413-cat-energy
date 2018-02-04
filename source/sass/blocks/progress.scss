@@ -13,6 +13,10 @@
     justify-content: space-between;
     margin: 0 23px;
   }
+
+  @media (min-width: 1300px) {
+    margin: 0;
+  }
 }
 
 .progress-btn:focus + .progress__text {
