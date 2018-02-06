@@ -189,6 +189,12 @@
   @media (min-width: $desktop) {
     padding: 0 0 0;
   }
+
+  @media (max-width: $tablet), (min-width: $desktop) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .programs__btn {
@@ -245,11 +251,5 @@
 
   @media (min-width: $desktop) {
     padding-top: 31px;
-  }
-}
-
-@media (max-width: $tablet), (min-width: $desktop) {
-  .programs__text br {
-    display: none;
   }
 }

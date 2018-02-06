@@ -59,7 +59,7 @@
 .product-other__volume {
   margin: 0;
 
-  &--no-mobile {
+  &--grams {
     //@extend .visually-hidden:not(:focus):not(:active);
     position: absolute;
 
@@ -79,7 +79,7 @@
   @media (min-width: $tablet) {
     //margin-right: 53px;
 
-    &--no-mobile {
+    &--grams {
       position: relative;
       margin: 0;
 
