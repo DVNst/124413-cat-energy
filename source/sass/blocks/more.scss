@@ -1,7 +1,16 @@
 .more {
-  text-align: center;
+  display: flex;
   padding-right: 20px;
   padding-left: 20px;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 37px 39px;
+    border: 1px solid $grey;
+  }
 }
 
 .more__title {
@@ -12,8 +21,8 @@
   padding-bottom: 0;
   padding-left: 1px;
 
-
   width: 100%;
+  box-sizing: border-box;
 
   font-size: 16px;
   line-height: 20px;
@@ -22,6 +31,7 @@
   &::before {
     content: "";
     position: absolute;
+    display: block;
     width: 30px;
     height: 30px;
     top: 27px;
@@ -32,6 +42,20 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
+  @media (min-width: $tablet) {
+    padding: 163px 50px 0;
+    margin-bottom: 27px;
+
+    font-size: 20px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+
+      top: 55px;
+    }
+  }
 }
 
 .more__title-link {
@@ -39,6 +63,7 @@
 }
 
 .more__text {
+  display: block;
   margin: 0;
   margin-bottom: 20px;
   padding-right: 2px;
@@ -46,6 +71,13 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more__btn {
@@ -58,4 +90,9 @@
 
   background-color: $bg-grey;
   color: #222222;
+
+  @media (min-width: $tablet) {
+    margin: auto 0 0;
+    padding: 10px;
+  }
 }

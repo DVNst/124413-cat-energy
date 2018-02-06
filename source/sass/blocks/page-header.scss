@@ -1,9 +1,9 @@
 .page-header {
   margin: 0;
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: $desktop + 140px;
 
     &--index {
       background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, $green);
@@ -15,8 +15,8 @@
 }
 
 .page-header__wrapper {
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: $desktop;
   }
 }

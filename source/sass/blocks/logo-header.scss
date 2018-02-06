@@ -3,13 +3,13 @@
   width: 33px;
   height: 38px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-right: 17px;
     width: 71px;
     height: 58px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     margin-right: 13px;
     width: 71px;
     height: 59px;
@@ -21,12 +21,12 @@
   width: 101px;
   height: 18px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 85px;
     height: 17px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     width: 118px;
     height: 22px;
   }

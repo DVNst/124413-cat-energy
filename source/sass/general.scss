@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  max-width: 320px;
+  width: 320px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
@@ -11,12 +11,13 @@ body {
 
   background-color: $bg-white;
 
-  @media (min-width: 768px) {
-    max-width: 768px;
+  @media (min-width: $tablet) {
+    width: auto;
+    max-width: $tablet;
   }
 
-  @media (min-width: 1300px) {
-    // max-width: 1440px;
+  @media (min-width: $desktop) {
+    width: auto;
     max-width: none;
   }
 }

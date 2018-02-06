@@ -1,5 +1,10 @@
 .catalog {
   padding-top: 15px;
+
+  @media (min-width: $tablet) {
+    padding-top: 58px;
+    margin-bottom: 39px;
+  }
 }
 
 .catalog__title {
@@ -11,8 +16,41 @@
   font-size: 36px;
   line-height: 60px;
   letter-spacing: -0.034em;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px 95px;
+
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+}
+
+.catalog__items {
+  @media (min-width: $tablet) {
+    margin: 0;
+    display: flex;
+
+    flex-wrap: wrap;
+  }
 }
 
 .catalog__item {
   border: 1px solid #ededed;
+
+  @media (min-width: $tablet) {
+    width: calc(50% - 60px);
+    margin: 70px 30px 70px;
+
+    box-sizing: border-box;
+    border: none;
+  }
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

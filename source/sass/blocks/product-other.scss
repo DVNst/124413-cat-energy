@@ -1,6 +1,16 @@
 .product-other {
   border-top: 1px solid $grey;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 35px 27px 38px;
+    display: flex;
+
+    border-right: 1px solid $grey;
+    border-left: 1px solid $grey;
+
+    flex-wrap: wrap;
+  }
 }
 
 .product-other__title {
@@ -12,6 +22,15 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: -0.023em;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-bottom: 26px;
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .product-other__desc {
@@ -24,6 +43,17 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 4px;
+    width: 50%;
+
+    justify-content: flex-end;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .product-other__volume {
@@ -45,12 +75,31 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  @media (min-width: $tablet) {
+    //margin-right: 53px;
+
+    &--no-mobile {
+      position: relative;
+      margin: 0;
+
+      width: auto;
+      height: auto;
+
+      clip-path: none;
+    }
+  }
 }
 
 .product-other__price {
   margin: 0;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 95px;
+    text-align: right;
+  }
 }
 
 .product-other__btn {
@@ -61,4 +110,9 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    padding-right: 15px;
+    width: 100%;
+  }
 }

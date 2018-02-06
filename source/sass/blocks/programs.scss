@@ -2,15 +2,15 @@
   margin-bottom: 17px;
   padding: 22px 20px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-bottom: 45px;
     padding: 0 30px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     margin: 0 auto 73px;
     padding: 26px 0 0;
-    max-width: 1300px;
+    max-width: $desktop;
   }
 }
 
@@ -23,8 +23,8 @@
 
   list-style: none;
 
-  @media (min-width: 1300px) {
-    max-width: 1220px;
+  @media (min-width: $desktop) {
+    max-width: $desktop - 80px;
     margin: 0 40px;
 
     flex-direction: row;
@@ -78,7 +78,7 @@
     background: url("../img/icon-cat-pro.svg") no-repeat 50% 50%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-bottom: 30px;
     padding: 76px 60px 40px 52px;
 
@@ -107,7 +107,7 @@
     }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     margin: 0;
     padding-top: 77px;
     width: 50%;
@@ -153,13 +153,13 @@
   font-weight: normal;
   color: $text-darkgrey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0 230px 25px 0;
 
     font-size: 36px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     padding: 0 40px 74px 163px;
   }
 }
@@ -177,7 +177,7 @@
 
   border-bottom: $lightgrey 1px solid;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0 212px 26px 0;
 
     font-size: 16px;
@@ -186,7 +186,7 @@
     border-bottom: none;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     padding: 0 0 0;
   }
 }
@@ -236,19 +236,19 @@
     opacity: 0.5;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding-top: 30px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     padding-top: 31px;
   }
 }
 
-@media (max-width: 768px), (min-width: 1300px) {
+@media (max-width: $tablet), (min-width: $desktop) {
   .programs__text br {
     display: none;
   }

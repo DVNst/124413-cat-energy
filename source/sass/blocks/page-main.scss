@@ -1,6 +1,6 @@
 .page-main {
   //background-color: $bg-white;
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop) {
     //padding-top: 26px;
   }
 }
