@@ -52,17 +52,17 @@
 
             <div class="form__wrapper-inner">
               <label class="form__label form__label--name" for="name">Имя:*</label>
-              <input class="form__input" type="text" name="name" id="name" required placeholder="Барсик">
+              <input class="form__input form__input--name" type="text" name="name" id="name" required placeholder="Барсик">
             </div>
 
             <div class="form__wrapper-inner">
               <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-              <input class="form__input" type="number" name="weight" id="weight" required placeholder="7">
+              <input class="form__input form__input--weight" type="number" name="weight" id="weight" required placeholder="7">
             </div>
 
             <div class="form__wrapper-inner">
               <label class="form__label form__label--years" for="years">Возраст (лет):</label>
-              <input class="form__input" type="number" name="years" id="years" placeholder="7">
+              <input class="form__input form__input--years" type="number" name="years" id="years" placeholder="7">
             </div>
           </fieldset>
 
@@ -101,37 +101,46 @@
         </fieldset>
 
         <fieldset class="form__comments">
-          <legend class="form__title">Коментарий</legend>
+          <legend class="form__title form__title--comment">Коментарий</legend>
 
           <textarea class="form__comment" rows="5" cols="30" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__products-other">
-          <legend class="form__title">Дополнительно</legend>
+          <legend class="form__title form__title--products-other">Дополнительно</legend>
 
-          <div class="form__wrapper-inner">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="sweetener" id="sweetener" checked>
-            <label class="form__label form__label--product-other" for="sweetener">Сахарозаменитель</label>
-          </div>
+          <div class="form__wrapper-products-other">
+            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="sweetener" id="sweetener" checked>
 
-          <div class="form__wrapper-inner">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="water" id="water">
-            <label class="form__label form__label--product-other" for="water">Питьевая вода</label>
-          </div>
+              <label class="form__label form__label--product-other" for="sweetener">Сахарозаменитель</label>
+            </div>
 
-          <div class="form__wrapper-inner">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="milk" id="milk">
-            <label class="form__label form__label--product-other" for="milk">Молоко</label>
-          </div>
+            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="water" id="water">
 
-          <div class="form__wrapper-inner">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="vitamins" id="vitamins">
-            <label class="form__label form__label--product-other" for="vitamins">Витамины</label>
+              <label class="form__label form__label--product-other" for="water">Питьевая вода</label>
+            </div>
+
+            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="milk" id="milk">
+
+              <label class="form__label form__label--product-other" for="milk">Молоко</label>
+            </div>
+
+            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="vitamins" id="vitamins">
+
+              <label class="form__label form__label--product-other" for="vitamins">Витамины</label>
+            </div>
           </div>
         </fieldset>
 
-        <input class="btn form__btn" type="submit" value="Отправить заявку">
-        <p class="form__legend">* &#8212; Обязательные поля</p>
+        <div class="form__wrapper-btn">
+          <input class="btn form__btn" type="submit" value="Отправить заявку">
+
+          <p class="form__legend">* &#8212; Обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>
@@ -142,7 +151,11 @@
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper contacts__wrapper--grey">
         <p class="contacts__text">Приглашаем</br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><span class="contacts__city"> Санкт-Петербург</span></p>
+
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8<br>
+          <span class="contacts__city"> Санкт-Петербург</span>
+        </p>
       </div>
 
       <div class="contacts__map">
