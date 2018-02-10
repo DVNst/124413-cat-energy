@@ -3,6 +3,10 @@
     max-width: $tablet;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
 }
 
 .questionary__title {
@@ -21,6 +25,11 @@
     font-weight: normal;
     letter-spacing: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px 0 40px;
+    padding: 75px 0 56px 0;
+  }
 }
 
 .questionary__desc {
@@ -38,5 +47,10 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px 66px;
+    padding: 0 850px 0 0;
   }
 }

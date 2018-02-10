@@ -39,7 +39,7 @@
     border: none;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-top: 12px;
   }
 }
@@ -48,9 +48,12 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
     padding: 0;
     padding-top: 8px;
-    border: none;
   }
 }
 

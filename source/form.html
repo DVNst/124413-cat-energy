@@ -47,23 +47,25 @@
         <h2 class="visually-hidden">Анкета</h2>
 
         <div class="form__wrapper">
-          <fieldset class="form__cat-info">
+          <fieldset class="form__cat-info form-cat-info">
             <legend class="visually-hidden">Информация о коте</legend>
 
-            <div class="form__wrapper-inner">
-              <label class="form__label form__label--name" for="name">Имя:*</label>
-              <input class="form__input form__input--name" type="text" name="name" id="name" required placeholder="Барсик">
-            </div>
+            <ul class="form-cat-info__list">
+              <li class="form__wrapper-inner form-cat-info__item">
+                <label class="form__label form__label--name" for="name">Имя:*</label>
+                <input class="form__input form__input--name form-cat-info__input" type="text" name="name" id="name" required placeholder="Барсик">
+              </li>
 
-            <div class="form__wrapper-inner">
-              <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-              <input class="form__input form__input--weight" type="number" name="weight" id="weight" required placeholder="7">
-            </div>
+              <li class="form__wrapper-inner form-cat-info__item">
+                <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+                <input class="form__input form__input--weight form-cat-info__input" type="number" name="weight" id="weight" required placeholder="7">
+              </li>
 
-            <div class="form__wrapper-inner">
-              <label class="form__label form__label--years" for="years">Возраст (лет):</label>
-              <input class="form__input form__input--years" type="number" name="years" id="years" placeholder="7">
-            </div>
+              <li class="form__wrapper-inner form-cat-info__item">
+                <label class="form__label form__label--years" for="years">Возраст (лет):</label>
+                <input class="form__input form__input--years form-cat-info__input" type="number" name="years" id="years" placeholder="7">
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form__programs">
@@ -86,54 +88,56 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__contacts">
-          <legend class="form__title">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__contacts form-contacts">
+          <h2 class="form__title form-contacts__title">Контактные данные (владельца кота)</h2>
 
-          <div class="form__wrapper-inner">
-            <label class="form__label form__label--email" for="email">E-mail:*</label>
-            <input class="form__input form__input--email" type="email" name="email" id="email" required placeholder="kuklachev@gmail.com">
-          </div>
+          <ul class="form-contacts__list">
+            <li class="form-contacts__item">
+              <label class="form__label form__label--email" for="email">E-mail:*</label>
+              <input class="form__input form__input--email" type="email" name="email" id="email" required placeholder="kuklachev@gmail.com">
+            </li>
 
-          <div class="form__wrapper-inner">
-            <label class="form__label form__label--phone" for="phone">Телефон:*</label>
-            <input class="form__input form__input--phone" type="tel" name="phone" id="phone" required placeholder="8 (960) 900-60-90">
-          </div>
+            <li class="form-contacts__item">
+              <label class="form__label form__label--phone" for="phone">Телефон:*</label>
+              <input class="form__input form__input--phone" type="tel" name="phone" id="phone" required placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__comments">
-          <legend class="form__title form__title--comment">Коментарий</legend>
+          <h2 class="form__title form__title--comment">Коментарий</h2>
 
           <textarea class="form__comment" rows="5" cols="30" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="form__products-other">
-          <legend class="form__title form__title--products-other">Дополнительно</legend>
+        <fieldset class="form__products-other form-products-other">
+          <h2 class="form__title form-products-other__title">Дополнительно</h2>
 
-          <div class="form__wrapper-products-other">
-            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+          <ul class="form-products-other__list">
+            <li class="form-products-other__item">
               <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="sweetener" id="sweetener" checked>
 
-              <label class="form__label form__label--product-other" for="sweetener">Сахарозаменитель</label>
-            </div>
+              <label class="form__label form-products-other__label" for="sweetener">Сахарозаменитель</label>
+            </li>
 
-            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+            <li class="form-products-other__item">
               <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="water" id="water">
 
-              <label class="form__label form__label--product-other" for="water">Питьевая вода</label>
-            </div>
+              <label class="form__label form-products-other__label" for="water">Питьевая вода</label>
+            </li>
 
-            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+            <li class="form-products-other__item">
               <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="milk" id="milk">
 
-              <label class="form__label form__label--product-other" for="milk">Молоко</label>
-            </div>
+              <label class="form__label form-products-other__label" for="milk">Молоко</label>
+            </li>
 
-            <div class="form__wrapper-inner form__wrapper-inner--products-other">
+            <li class="form-products-other__item">
               <input class="visually-hidden form__checkbox" type="checkbox" name="product-other" value="vitamins" id="vitamins">
 
-              <label class="form__label form__label--product-other" for="vitamins">Витамины</label>
-            </div>
-          </div>
+              <label class="form__label form-products-other__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
         </fieldset>
 
         <div class="form__wrapper-btn">
