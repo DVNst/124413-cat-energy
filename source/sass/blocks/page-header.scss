@@ -1,3 +1,22 @@
 .page-header {
   margin: 0;
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: $desktop + 140px;
+
+    &--index {
+      background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, $green);
+      background-size: 680px 696px;
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: $desktop;
+  }
 }

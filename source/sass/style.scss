@@ -13,9 +13,10 @@
 @import "blocks/features";
 @import "blocks/example";
 @import "blocks/progress";
+@import "blocks/range";
 @import "blocks/page-footer";
 @import "blocks/contacts";
-@import "blocks/logo";
+@import "blocks/logo-footer";
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/catalog";
@@ -26,3 +27,7 @@
 @import "blocks/offer";
 @import "blocks/questionary";
 @import "blocks/form";
+@import "blocks/form-cat-info";
+@import "blocks/form-programs";
+@import "blocks/form-contacts.scss";
+@import "blocks/form-products-other";

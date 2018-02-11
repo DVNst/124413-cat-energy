@@ -1,7 +1,33 @@
 .logo-header__image {
   margin-right: 57px;
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet) {
+    margin-right: 17px;
+    width: 71px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 13px;
+    width: 71px;
+    height: 59px;
+  }
 }
 
 .logo-header__text {
   padding-top: 5px;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet) {
+    width: 85px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 118px;
+    height: 22px;
+  }
 }

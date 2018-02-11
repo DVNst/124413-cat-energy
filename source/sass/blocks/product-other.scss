@@ -1,6 +1,30 @@
 .product-other {
   border-top: 1px solid $grey;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 35px 27px 38px;
+    display: flex;
+
+    border-right: 1px solid $grey;
+    border-left: 1px solid $grey;
+
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 15px 0 16px 2px;
+    border-right: none;
+    border-left: none;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-last-child {
+      border-bottom: 1px solid $grey;
+    }
+  }
 }
 
 .product-other__title {
@@ -12,6 +36,21 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: -0.023em;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-bottom: 26px;
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 285px;
+    margin-right: 39px;
+    padding: 0;
+  }
 }
 
 .product-other__desc {
@@ -24,12 +63,30 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 4px;
+    width: 50%;
+
+    justify-content: flex-end;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 7px;
+    width: 285px;
+
+    justify-content: space-between;
+  }
 }
 
 .product-other__volume {
   margin: 0;
 
-  &--no-mobile {
+  &--grams {
     //@extend .visually-hidden:not(:focus):not(:active);
     position: absolute;
 
@@ -45,12 +102,42 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  @media (min-width: $tablet) {
+    //margin-right: 53px;
+
+    &--grams {
+      position: relative;
+      margin: 0;
+
+      width: auto;
+      height: auto;
+
+      clip-path: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: auto;
+  }
 }
 
 .product-other__price {
   margin: 0;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 95px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: 45px;
+
+    flex-grow: 0;
+    text-align: left;
+  }
 }
 
 .product-other__btn {
@@ -61,4 +148,18 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-left: 38px;
+    padding-left: 15px;
+
+    flex-grow: 0;
+    box-sizing: border-box;
+  }
 }

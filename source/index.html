@@ -3,45 +3,84 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Cat energy</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
+  <style>
+    HTML {
+      background: url("cat-energy-index-mobile.jpg") 50% 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("cat-energy-index-tablet.jpg");
+      }
+    }
+
+    @media (min-width: 1300px) {
+      HTML {
+        background-image: url("cat-energy-index-desktop.jpg");
+      }
+    }
+    BODY {
+      opacity: 1;
+    }
+
+    /*BODY > * {
+        outline: 2px solid deeppink;
+    }
+    BODY > * > * {
+        outline: 2px dashed lime;
+        outline-offset: -2px;
+    }
+    BODY > * > * > * {
+        outline: 2px dotted dodgerblue;
+        outline-offset: -4px;
+    }*/
+  </style>
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <a class="main-nav__logo logo-header">
-        <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
+  <header class="page-header page-header--index">
+    <div class="page-header__wrapper">
+      <nav class="main-nav main-nav--index">
+        <a class="main-nav__logo logo-header">
+          <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
 
-        <img src="img/logo-mobile-header.svg" width="101" height="18" class="logo-header__text" alt="Cat energy">
-      </a>
+          <img src="img/logo-mobile-header.svg" width="101" height="18" class="logo-header__text" alt="Cat energy">
+        </a>
 
-      <button class="main-nav__toggle main-nav__toggle--close"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close"><span class="visually-hidden">Открыть меню</span></button>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
 
-        <li class="main-nav__item">
-          <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-        </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+          </li>
 
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
 
-    <section class="page-header__desc desc">
-      <div class="desc_wrapper">
-        <h1 class="desc__title">Функциональное питание для котов</h1>
+      <section class="page-header__desc desc">
+        <div class="desc_wrapper">
+          <h1 class="desc__title">Функциональное питание для котов</h1>
 
-        <p class="desc__slogan">Занялся собой? Займись котом!</p>
-      </div>
+          <p class="desc__slogan">Занялся собой? Займись котом!</p>
+        </div>
 
-      <a href="form.html" class="desc__btn-form btn">Подобрать программу</a>
-    </section>
+        <a href="form.html" class="desc__btn-form btn">Подобрать программу</a>
+      </section>
+    </div>
   </header>
 
   <main class="page-main">
@@ -57,7 +96,7 @@
 
         <li class="programs__item programs__item--mass">
           <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <p class="programs__text">Заработать авторитет среди дворовых котов<br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
           <a href="#" class="programs__btn">Каталог pro</a>
         </li>
       </ul>
@@ -81,55 +120,56 @@
         </li>
 
         <li class="features__item features__item--clock">
-          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
         </li>
       </ul>
     </section>
 
     <section class="example">
-      <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
+      <div class="example__wrapper-outside">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
 
-        <div class="example__wrapper-inner">
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-          <ul class="example__list">
-            <li class="example__item">
-              <span class="example__profit">5 кг</span>
-              <span class="example__subs example__subs--weight">снижение веса</span>
-            </li>
+          <div class="example__wrapper-inner">
+            <ul class="example__list">
+              <li class="example__item">
+                <span class="example__profit">5 кг</span>
+                <span class="example__subs example__subs--weight">снижение веса</span>
+              </li>
 
-            <li class="example__item">
-              <span class="example__profit">60 дней</span>
-              <span class="example__subs example__subs--days">затрачено времени</span>
-            </li>
-          </ul>
+              <li class="example__item">
+                <span class="example__profit">60 дней</span>
+                <span class="example__subs example__subs--days">затрачено времени</span>
+              </li>
+            </ul>
 
-          <div class="example__wrapper-cost">
-            <span class="example__cost example__cost--left">Затраты на питание:</span>
-            <span class="example__cost example__cost--right">15 000 руб.</span>
+            <div class="example__wrapper-cost">
+              <span class="example__cost example__cost--left">Затраты на питание:</span>
+              <span class="example__cost example__cost--right">15 000 руб.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="example__photo slider">
+          <img src="img/before-mobile@1x.png" width="320" height="240" class="example__image slider__item" alt="Кот до">
+          <img src="img/after-mobile@1x.png" class="example__image slider__item visually-hidden" alt="Кот после">
+
+          <div class="example__progress progress">
+            <p class="progress__wrapper">
+              <input type="radio" name="progress-btn" class="visually-hidden" id="before" checked>
+              <label for="before" class="progress__text">Было</label>
+
+              <span class="progress__bar"></span>
+              <input class="progress__range range" type="range" min="0" max="100" step="1" value="50">
+
+              <input type="radio" name="progress-btn" class="visually-hidden" id="after">
+              <label for="after" class="progress__text">Стало</label>
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="example__photo slider">
-        <img src="img/before-mobile@1x.png" width="320" height="240" class="example__image slider__item" alt="Кот до">
-        <img src="img/after-mobile@1x.png" class="example__image slider__item visually-hidden" alt="Кот после">
-      </div>
-
-      <div class="example__progress progress">
-        <p class="progress__wrapper">
-          <input type="radio" name="progress-btn" class="visually-hidden" id="before" checked>
-          <label for="before" class="progress__text">Было</label>
-
-          <span class="progress__bar"></span>
-          <input class="visually-hidden" type="range" min="0" max="100" step="1" value="50">
-
-          <input type="radio" name="progress-btn" class="visually-hidden" id="after">
-          <label for="after" class="progress__text">Стало</label>
-        </p>
-      </div>
-
     </section>
   </main>
 
@@ -139,7 +179,11 @@
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper">
         <p class="contacts__text">Приглашаем</br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+
+        <p class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8<br>
+          <span class="contacts__city"> Санкт-Петербург</span>
+        </p>
       </div>
 
       <div class="contacts__map">
@@ -148,8 +192,8 @@
     </div>
 
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo logo">
-        <img src="img/logo-footer.svg" width="128" height="24" class="logo__image" alt="Логотип Cat energy">
+      <div class="page-footer__logo logo-footer">
+        <img src="img/logo-footer.svg" width="128" height="24" class=" logo-footer__image" alt="Логотип Cat energy">
       </div>
 
       <div class="page-footer__social social">

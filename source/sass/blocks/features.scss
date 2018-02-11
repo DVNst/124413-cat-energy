@@ -1,6 +1,16 @@
 .features {
   margin-bottom: 42px;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 27px;
+    max-width: $desktop;
+  }
 }
 
 .features__title {
@@ -12,6 +22,19 @@
   line-height: 60px;
   font-weight: normal;
   color: $text-darkgrey;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 27px;
+    padding: 0 30px;
+
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px;
+    padding: 0;
+    max-width: 1220px;
+  }
 }
 
 .features__list {
@@ -22,6 +45,19 @@
   flex-direction: column;
 
   list-style: none;
+  counter-reset: item_number; //Инициируем счетчик
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 27px 0 0;
+    max-width: $desktop;
+  }
 }
 
 .features__item {
@@ -41,39 +77,81 @@
     top: 0;
 
     background-color: $green;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-
-    width: 60px;
-    height: 60px;
-    left: 0;
-    top: 0;
-
-    background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 
-  &--leaf::after {
+  &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--dining::after {
+  &--dining::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--clock::after {
+  &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 
   &:last-child {
     margin: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 45px 30px 45px;
+    width: 50%;
+    min-height: 228px;
+
+    box-sizing: border-box;
+    z-index: 1;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 45px;
+      left: 30px;
+    }
+
+    &::after {
+      position: absolute;
+
+      counter-increment: item_number; //Увеличиваем значение счетчика
+      content: counter(item_number);
+
+      height: 228px;
+      width: auto;
+      top: 0;
+      right: 100px;
+
+      z-index: -1;
+
+      //font-size: 281px;
+      //line-height: 281px;
+      font-size: 320px;
+      line-height: 320px;
+      color: $bg-grey;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    //margin: 45px 40px 45px;
+    padding: 45px 40px 45px;
+    margin: 0;
+    width: 25%;
+
+    &::before {
+      left: 40px;
+    }
+
+    &::after {
+      top: 3px;
+      right: 31px;
+    }
   }
 }
 
@@ -82,4 +160,24 @@
   padding-top: 2px;
   padding-left: 80px;
   padding-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 112px;
+    padding-right: 60px;
+    padding-bottom: 44px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $tablet) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 112px 0 0;
+  }
 }

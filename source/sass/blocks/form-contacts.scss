@@ -1,0 +1,28 @@
+.form-contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    margin: 0 40px;
+  }
+}
+
+.form-contacts__item {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: $desktop) {
+    width: 50%;
+
+    &:nth-child(2n-1) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+  }
+}

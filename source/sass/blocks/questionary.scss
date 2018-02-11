@@ -1,17 +1,35 @@
 .questionary {
-  //color: red;
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
 }
 
 .questionary__title {
   margin: 0;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  padding: 15px 15px 25px 20px;
 
   font-size: 36px;
   line-height: 60px;
   letter-spacing: -0.031em;
+
+  @media (min-width: $tablet) {
+    margin: 0 30px 0 29px;
+    padding: 58px 0 56px 0;
+
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px 0 40px;
+    padding: 75px 0 56px 0;
+  }
 }
 
 .questionary__desc {
@@ -22,4 +40,17 @@
   padding-right: 20px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0 30px 66px;
+    padding: 0 324px 0 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 40px 66px;
+    padding: 0 850px 0 0;
+  }
 }

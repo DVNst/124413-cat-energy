@@ -1,0 +1,24 @@
+.form-cat-info__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-cat-info__item {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 21px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-cat-info__input {
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}

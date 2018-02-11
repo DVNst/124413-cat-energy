@@ -1,5 +1,18 @@
 .desc {
-  //padding-bottom: 22px;
+  @media (min-width: $tablet) {
+    padding-bottom: 533px;
+
+    background: $bg-white url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+    background-size: 80% 70%;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 241px;
+
+    background-color: transparent;
+    background-position: 67% 28px;
+    background-size: 40% 78%;
+  }
 }
 
 .desc_wrapper {
@@ -20,6 +33,30 @@
 
     background: url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+    padding-top: 58px;
+    padding-left: 118px;
+    padding-right: 118px;
+    padding-bottom: 20px;
+
+    background: none;
+    color: $text-darkgrey;
+
+    &::after {
+      width: 0;
+      height: 0;
+      bottom: 0;
+
+      background: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 53px;
+    padding: 109px 50% 0 120px;
+  }
 }
 
 .desc__title {
@@ -30,6 +67,14 @@
   line-height: 36px;
   font-weight: normal;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .desc__slogan {
@@ -40,8 +85,23 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
 
 .desc__btn-form {
   margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin-left: 120px;
+    display: inline-block;
+    padding: 15px 29px 17px 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
