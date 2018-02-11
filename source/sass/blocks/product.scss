@@ -64,7 +64,7 @@
 
 .product__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding-top: 22px;
   padding-right: 50px;
 
@@ -107,7 +107,7 @@
 
   font-family: $secondary-font;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -132,7 +132,7 @@
 .product__value {
   position: relative;
   padding: 0;
-  right: -4px;
+  right: -2px;
 
   text-align: right;
 

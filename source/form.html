@@ -68,23 +68,25 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__programs">
+          <fieldset class="form__programs form-programs">
             <legend class="visually-hidden">Выбор программы</legend>
 
-            <div class="form__wrapper-inner">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="loss" id="loss" checked>
-              <label class="form__program" for="loss">Похудение</label>
-            </div>
+            <ul class="form-programs__list">
+              <li class="form-programs__item">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="loss" id="loss" checked>
+                <label class="form__program" for="loss">Похудение</label>
+              </li>
 
-            <div class="form__wrapper-inner">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="mass" id="mass">
-              <label class="form__program" for="mass">Набор массы</label>
-            </div>
+              <li class="form-programs__item">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="mass" id="mass">
+                <label class="form__program" for="mass">Набор массы</label>
+              </li>
 
-            <div class="form__wrapper-inner">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="consultation" id="consultation">
-              <label class="form__program" for="consultation">Не знаю (нужен ваш совет)</label>
-            </div>
+              <li class="form-programs__item">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="consultation" id="consultation">
+                <label class="form__program" for="consultation">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
 
