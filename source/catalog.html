@@ -6,6 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Cat energy Catalog</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+    HTML {
+      background: url("cat-energy-catalog2-mobile.jpg") 50% 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("cat-energy-catalog-tablet.jpg");
+      }
+    }
+
+    @media (min-width: 1300px) {
+      HTML {
+        background-image: url("cat-energy-catalog-desktop.jpg");
+      }
+    }
+    BODY {
+      opacity: 0.41;
+    }
+
+    /*BODY > * {
+        outline: 2px solid deeppink;
+    }
+    BODY > * > * {
+        outline: 2px dashed lime;
+        outline-offset: -2px;
+    }
+    BODY > * > * > * {
+        outline: 2px dotted dodgerblue;
+        outline-offset: -4px;
+    }*/
+  </style>
 </head>
 
 <body>
@@ -261,7 +294,9 @@
     </section>
 
     <section class="catalog-other">
-      <h2 class="catalog-other__title">Дополнительные товары</h2>
+      <div class="catalog-other__title-wrapper">
+        <h2 class="catalog-other__title"><span>Дополнительные товары</span></h2>
+      </div>
 
       <div class="catalog-other__wrapper">
         <ul class="catalog-other__list">
@@ -315,7 +350,7 @@
           <div class="offer__wrapper">
             <h3 class="visually-hidden">Специальное предложение</h3>
 
-            <p class="offer__desc">Закажите все</br> и получите чехол для кота в подарок!</p>
+            <p class="offer__desc">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
         </article>
       </div>
@@ -327,7 +362,7 @@
 
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper contacts__wrapper--grey">
-        <p class="contacts__text">Приглашаем</br> к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
 
         <p class="contacts__address">
           ул. Большая Конюшенная, д. 19/8<br>
@@ -341,9 +376,9 @@
     </div>
 
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo logo-footer">
+      <a href="index.html" class="page-footer__logo logo-footer">
         <img src="img/logo-footer.svg" width="128" height="24" class=" logo-footer__image" alt="Логотип Cat energy">
-      </div>
+      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">

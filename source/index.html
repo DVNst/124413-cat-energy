@@ -7,12 +7,9 @@
   <title>HTML Academy: Cat energy</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-
   <style>
     HTML {
-      background: url("cat-energy-index-mobile.jpg") 50% 0 no-repeat;
+      background: url("cat-energy-index2-mobile.jpg") 50% 0 no-repeat;
     }
 
     @media (min-width: 768px) {
@@ -27,7 +24,7 @@
       }
     }
     BODY {
-      opacity: 1;
+      opacity: 0.5;
     }
 
     /*BODY > * {
@@ -153,8 +150,8 @@
         </div>
 
         <div class="example__photo slider">
-          <img src="img/before-mobile@1x.png" width="320" height="240" class="example__image slider__item" alt="Кот до">
-          <img src="img/after-mobile@1x.png" class="example__image slider__item visually-hidden" alt="Кот после">
+          <img src="img/before-mobile@1x.png" width="320" height="240" class="example__image example__image--before slider__item" alt="Кот до">
+          <img src="img/after-mobile@1x.png" class="example__image example__image--after slider__item visually-hidden" alt="Кот после">
 
           <div class="example__progress progress">
             <p class="progress__wrapper">
@@ -178,7 +175,7 @@
 
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper">
-        <p class="contacts__text">Приглашаем</br> к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
 
         <p class="contacts__address">
           ул. Большая Конюшенная, д. 19/8<br>
@@ -192,9 +189,9 @@
     </div>
 
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo logo-footer">
+      <a class="page-footer__logo logo-footer">
         <img src="img/logo-footer.svg" width="128" height="24" class=" logo-footer__image" alt="Логотип Cat energy">
-      </div>
+      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">

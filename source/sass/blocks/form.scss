@@ -14,17 +14,17 @@
 
 .form__wrapper {
   @media (min-width: $desktop) {
+    max-width: $desktop - 80px;
+    margin: 0 auto 70px;
+    padding: 0 40px 0 41px;
     display: flex;
-    margin: 0 40px 69px;
   }
 }
 
 .form__cat-info {
   margin: 0;
-  padding-top: 19px;
-  padding-right: 20px;
-  padding-bottom: 9px;
-  padding-left: 20px;
+  margin-bottom: 9px;
+  padding: 0 20px;
 
   border: none;
 
@@ -54,12 +54,12 @@
 
     &--email {
       margin: 0 auto;
-      padding-left: 71px;
+      padding-left: 42px;
     }
 
     &--phone {
       margin: 0 auto;
-      padding-left: 68px;
+      padding-left: 38px;
     }
   }
 
@@ -78,16 +78,13 @@
 }
 
 .form__input {
-  margin-left: 14px;
-  margin-bottom: 14px;
-  padding-top: 9px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-
-  flex-grow: 1;
+  height: 30px;
+  margin: 0 0 14px 14px;
+  padding: 9px 15px 10px 15px;
 
   border: 1px solid $lightgrey;
+
+  flex-grow: 1;
 
   font-family: $primary-font;
   font-size: 16px;
@@ -129,13 +126,13 @@
 
     &--email {
       margin-left: 19px;
-      margin-right: 65px;
+      margin-right: 35px;
       padding: 9px 50px 11px 20px;
     }
 
     &--phone {
       margin-left: 16px;
-      margin-right: 66px;
+      margin-right: 36px;
       padding: 8px 50px 11px 19px;
     }
   }
@@ -158,15 +155,12 @@
 
 .form__programs {
   margin: 0;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 7px;
-  padding-left: 20px;
+  margin-bottom: 28px;
+  padding: 20px 20px 7px;
 
   border: 1px solid #ededed;
 
   @media (min-width: $tablet) {
-    margin: 0;
     margin-left: 30px + 41px;
     margin-bottom: 75px;
     padding: 16px 113px 19px 28px;
@@ -229,70 +223,101 @@
 
 .form__contacts {
   margin: 0;
-  margin-top: 28px;
-  padding-top: 19px;
-  padding-right: 20px;
-  padding-bottom: 9px;
-  padding-left: 20px;
+  margin-bottom: 14px;
+  padding: 0;
 
   border: none;
 
   @media (min-width: $tablet) {
     margin: 0;
     margin-bottom: 44px;
-    padding: 0;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 67px;
+    margin-bottom: 66px;
+  }
+}
+
+.form__title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+
+    left: 0;
+    right: 0;
+    top: 14px;
+
+    height: 3px;
+
+    background-color: $green;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: 22px;
+    }
   }
 }
 
 .form__title {
-  position: relative;
-  //display: inline-block;
+  display: block;
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
-  padding-bottom: 15px;
-
-  font-size: 24px;
-  line-height: 24px;
-  //overflow: hidden;
-  background-color: $white;
-  z-index: 2;
 
   &--comment {
     letter-spacing: 0.058em;
   }
 
-  &::before {
-    // content: "";
-    // position: absolute;
-    // width: 100%;
-    // height: 3px;
+  span {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
 
-    // top: 15px;
-    // z-index: -10;
-    // background-color: $green;
+    background: $white;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--contacts span {
+    margin-right: 99px;
+  }
+
+  &--comment span {
+    letter-spacing: 0.059em;
   }
 
   @media (min-width: $tablet) {
-    margin: 0 30px 0 30px;
-    padding: 0 42px 76px 40px;
+    margin: 0 30px 75px 30px;
 
-    font-size: 36px;
-    line-height: 36px;
+    &--contacts span {
+      margin: 0;
+    }
 
-    &--comment {
+    span {
+      padding: 0 42px 0 40px;
+
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &--comment span {
       padding-left: 39px;
+      padding-right: 38px;
       letter-spacing: 0.059em;
     }
   }
 
   @media (min-width: $desktop) {
-    margin: 0 40px;
+    width: $desktop;
+    margin: 0 auto 76px;
     padding: 0;
-    padding-bottom: 76px;
 
     font-weight: normal;
     letter-spacing: 0;
@@ -305,11 +330,8 @@
 
 .form__comments {
   margin: 0;
-  margin-top: 5px;
-  padding-top: 19px;
-  padding-right: 20px;
-  padding-bottom: 9px;
-  padding-left: 20px;
+  margin-bottom: 25px;
+  padding: 0;
 
   border: none;
 
@@ -320,17 +342,25 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 64px;
+    margin-bottom: 63px;
+  }
+}
+
+.form__comment-wrapper {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    margin: 0 auto;
   }
 }
 
 .form__comment {
   min-width: 253px;
-  min-height: 129px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  height: 129px;
+  margin: 0 20px;
+  padding: 10px 10px 10px 15px;
 
   border: 1px solid #ededed;
 
@@ -340,7 +370,7 @@
 
   @media (min-width: $tablet) {
     min-width: 593px;
-    min-height: 154px;
+    height: 154px;
     margin: 0 70px;
     padding: 9px 18px;
 
@@ -350,15 +380,15 @@
 
   @media (min-width: $desktop) {
     min-width: 1182px;
-    min-height: 154px;
+    height: 154px;
     margin: 0 40px;
   }
 }
 
 .form__products-other {
   margin: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 28px;
+  padding: 0;
 
   border: none;
 
@@ -381,8 +411,6 @@
 .form__wrapper-btn {
   display: flex;
   margin: 0;
-  // margin-left: 71px;
-  // margin-right: 71px;
 
   flex-direction: column;
 
@@ -394,16 +422,15 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 40px;
+    max-width: $desktop;
+    margin: 0 auto;
   }
 }
 
 .form__btn {
-  margin-right: 20px;
-  margin-bottom: 19px;
-  margin-left: 20px;
-  padding-bottom: 10px;
-  min-width: 280px;
+  margin: 0 20px 19px;
+  padding: 11px 10px 10px 13px;
+  width: calc(100% - 40px);
 
   font-size: 16px;
   line-height: 20px;
@@ -412,14 +439,15 @@
     width: 50%;
     margin: 0;
     margin-right: 30px;
-    padding: 15px 18px 17px 11px;
+    padding: 16px 16px 16px 11px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop) {
-    margin-right: 40px;
-    padding: 15px 15px 17px 15px;
+    width: 50%;
+    margin: 0 40px;
+    padding: 16px 11px 16px 11px;
   }
 }
 
@@ -441,6 +469,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 40px;
+    margin: -4px 40px 0;
   }
 }
