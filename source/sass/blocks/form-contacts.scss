@@ -1,12 +1,18 @@
 .form-contacts__list {
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 
   list-style: none;
 
+  @media (min-width: $tablet) {
+    margin: 0 30px;
+  }
+
   @media (min-width: $desktop) {
+    max-width: $desktop;
+    margin: 0 auto;
     display: flex;
-    margin: 0 40px;
+    //margin: 0 40px;
   }
 }
 
@@ -16,13 +22,6 @@
 
   @media (min-width: $desktop) {
     width: 50%;
-
-    &:nth-child(2n-1) {
-      margin-right: 40px;
-    }
-
-    &:nth-child(2n) {
-      margin-left: 40px;
-    }
+    margin: 0 40px;
   }
 }

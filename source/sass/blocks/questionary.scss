@@ -5,7 +5,17 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 100%;
+  }
+}
+
+.questionary__wrapper {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
     max-width: $desktop;
+    margin: 0 auto;
   }
 }
 
@@ -27,15 +37,15 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 40px 0 40px;
-    padding: 75px 0 56px 0;
+    margin: 75px 40px 56px;
+    padding: 0;
   }
 }
 
 .questionary__desc {
   margin: 0;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 39px;
   margin-left: 20px;
   padding-right: 20px;
 
@@ -50,7 +60,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 40px 66px;
-    padding: 0 850px 0 0;
+    margin: 0 885px 65px 40px;
+    padding: 0;
   }
 }

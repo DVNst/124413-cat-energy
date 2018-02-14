@@ -2,16 +2,17 @@
   @media (min-width: $tablet) {
     padding-bottom: 533px;
 
-    background: $bg-white url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
+    background: transparent url("../img/index-can-mobile@1x.png") no-repeat 50% 100%;
     background-size: 80% 70%;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 241px;
+    padding-bottom: 188px;
 
+    background-image: url("../img/index-can-desktop@1x.png");
     background-color: transparent;
-    background-position: 67% 28px;
-    background-size: 40% 78%;
+    background-position: 65.5% 29px;
+    background-size: 552px 499px;
   }
 }
 

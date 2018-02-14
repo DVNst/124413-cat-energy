@@ -6,6 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Academy: Cat energy Form</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+    HTML {
+      background: url("cat-energy-form-mobile2.jpg") 50% 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background: url("cat-energy-form-tablet.jpg") 50% 0 no-repeat;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      HTML {
+        background: url("cat-energy-form-desktop.jpg") 50% 0 no-repeat;
+      }
+    }
+    BODY {
+      opacity: 0.5;
+    }
+
+    /*BODY > * {
+        outline: 2px solid deeppink;
+    }
+    BODY > * > * {
+        outline: 2px dashed lime;
+        outline-offset: -2px;
+    }
+    BODY > * > * > * {
+        outline: 2px dotted dodgerblue;
+        outline-offset: -4px;
+    }*/
+  </style>
 </head>
 
 <body>
@@ -22,7 +55,7 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html" class= main-nav__link main-nav__link--active">Главная</a>
+            <a href="index.html" class= "main-nav__link">Главная</a>
           </li>
 
           <li class="main-nav__item">
@@ -39,9 +72,11 @@
 
   <main class="page-main">
     <section class="questionary">
-      <h1 class="questionary__title">Подбор программы</h1>
+      <div class="questionary__wrapper">
+        <h1 class="questionary__title">Подбор программы</h1>
 
-      <p class="questionary__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="questionary__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
 
       <form action="https://echo.htmlacademy.ru" method="post" class="questionary__form form">
         <h2 class="visually-hidden">Анкета</h2>
@@ -91,7 +126,11 @@
         </div>
 
         <fieldset class="form__contacts form-contacts">
-          <legend class="form__title"><span>Контактные данные (владельца кота)</span></legend>
+          <legend class="form__title-wrapper">
+            <span class="form__title form__title--contacts">
+              <span>Контактные данные (владельца кота)</span>
+            </span>
+          </legend>
 
           <ul class="form-contacts__list">
             <li class="form-contacts__item">
@@ -107,13 +146,25 @@
         </fieldset>
 
         <fieldset class="form__comments">
-          <legend class="form__title form__title--comment"><span>Коментарий</span></legend>
+          <legend class="form__title-wrapper">
+            <span class="form__title form__title--comment">
+              <span>Коментарий</span>
+            </span>
+          </legend>
 
-          <textarea class="form__comment" rows="5" cols="30" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__comment-wrapper">
+            <div class="form__textara-wrapper">
+              <textarea class="form__comment" rows="5" cols="30" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="form__products-other form-products-other">
-          <legend class="form__title form-products-other__title"><span>Дополнительно</span></legend>
+          <legend class="form__title-wrapper">
+            <span class="form__title form-products-other__title">
+              <span>Дополнительно</span>
+            </span>
+          </legend>
 
           <ul class="form-products-other__list">
             <li class="form-products-other__item">
@@ -156,7 +207,7 @@
 
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper contacts__wrapper--grey">
-        <p class="contacts__text">Приглашаем</br> к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
 
         <p class="contacts__address">
           ул. Большая Конюшенная, д. 19/8<br>
@@ -170,9 +221,9 @@
     </div>
 
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo logo-footer">
+      <a href="index.html" class="page-footer__logo logo-footer">
         <img src="img/logo-footer.svg" width="128" height="24" class=" logo-footer__image" alt="Логотип Cat energy">
-      </div>
+      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">

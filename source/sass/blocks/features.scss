@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto 27px;
+    margin: 0 auto 44px;
     max-width: $desktop;
   }
 }
@@ -123,17 +123,18 @@
       counter-increment: item_number; //Увеличиваем значение счетчика
       content: counter(item_number);
 
-      height: 228px;
+      height: 233px;
       width: auto;
-      top: 0;
-      right: 100px;
+      top: 5px;
+      left: 145px;
 
       z-index: -1;
 
       //font-size: 281px;
       //line-height: 281px;
-      font-size: 320px;
-      line-height: 320px;
+      font-family: $primary-font;
+      font-size: 281px;
+      line-height: 281px;
       color: $bg-grey;
     }
   }
@@ -149,8 +150,7 @@
     }
 
     &::after {
-      top: 3px;
-      right: 31px;
+      left: 154px;
     }
   }
 }

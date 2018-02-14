@@ -6,10 +6,26 @@
     max-width: $desktop + 140px;
 
     &--index {
-      background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, $green);
-      background-size: 680px 696px;
-      background-repeat: no-repeat;
-      background-position: right top;
+      position: relative;
+      background-image: linear-gradient(to right, $white calc(50% + 40px), $green calc(50% + 40px), $green 100%);
+      min-height: 696px;
+      margin-bottom: 53px;
+
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    &--index::before {
+      content: "";
+      position: absolute;
+      width: 680px;
+      height: 696px;
+      top: 0;
+      left: calc(50% + 40px);
+
+      z-index: -1;
+
+      background-image: url("../img/index-background-desktop.jpg");
     }
   }
 }
@@ -18,5 +34,7 @@
   @media (min-width: $desktop) {
     margin: 0 auto;
     max-width: $desktop;
+
+    z-index: 1;
   }
 }
