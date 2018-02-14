@@ -5,8 +5,8 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "7.2.x",
-    "browser-sync": "2.23.x",
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
     "gulp": "3.9.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
@@ -37,5 +37,6 @@
   ],
   "engines": {
     "node": "8.9"
-  }
+  },
+  "dependencies": {}
 }
