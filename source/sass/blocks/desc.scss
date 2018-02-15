@@ -24,6 +24,11 @@
   background: $green url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
   color: $text-white;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: cover;
+  }
+
   &::after {
     position: absolute;
     content: "";

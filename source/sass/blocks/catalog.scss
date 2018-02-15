@@ -59,7 +59,7 @@
 
   @media (min-width: $tablet) {
     width: calc(50% - 60px);
-    margin: 70px 30px;
+    margin: 70px 30px 69px;
 
     box-sizing: border-box;
     border: none;
@@ -75,7 +75,7 @@
 
   @media (min-width: $desktop) {
     width: calc(25% - 80px);
-    margin: 82px 40px 61px;
+    margin: 82px 40px 60px;
 
     &:nth-last-child(3) {
       margin-bottom: 0;
