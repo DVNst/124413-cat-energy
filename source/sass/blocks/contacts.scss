@@ -97,7 +97,38 @@
 .contacts__map {
   margin: 0;
   padding: 0;
-  width: 100%;
+  min-width: 320px;
+  height: 359px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  color: $text-darkgrey;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-map-mobile@2x.png");
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    height: 396px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-map-tablet@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    height: 400px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-map-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
 }
 
 .contacts__map iframe {

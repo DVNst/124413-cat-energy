@@ -190,7 +190,7 @@
     padding: 0 0 0;
   }
 
-  @media (max-width: $tablet), (min-width: $desktop) {
+  @media (max-width: $tablet - 1px), (min-width: $desktop) {
     br {
       display: none;
     }
@@ -216,17 +216,23 @@
 
     width: 24px;
     height: 11px;
-    top: 49%;
-    transform: translate(13px, -50%);
+    top: 38%;
+    transform: translateX(11px);
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
+
+    @media (min-width: $tablet) {
+      top: 49%;
+      transform: translateX(25px);
+    }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     width: 33px;
     height: 11px;
 
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
   }
 
   &:active {
@@ -237,8 +243,7 @@
     width: 33px;
     height: 11px;
 
-
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
     opacity: 0.5;
   }
 
