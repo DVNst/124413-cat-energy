@@ -18,7 +18,7 @@
 
     background-image: url("../img/index-can-desktop@1x.png");
     background-color: transparent;
-    background-position: 65.5% 29px;
+    background-position: 65.5% 25px;
     background-size: 552px 499px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -58,8 +58,8 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 24px;
-    padding-top: 58px;
-    padding-left: 118px;
+    padding-top: 53px;
+    padding-left: 117px;
     padding-right: 118px;
     padding-bottom: 20px;
 
@@ -77,7 +77,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 53px;
-    padding: 109px 50% 0 120px;
+    padding: 105px 50% 0 120px;
   }
 }
 

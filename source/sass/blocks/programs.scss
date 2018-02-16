@@ -216,10 +216,15 @@
 
     width: 24px;
     height: 11px;
-    top: 49%;
-    transform: translateX(25px);
+    top: 38%;
+    transform: translateX(11px);
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
+
+    @media (min-width: $tablet) {
+      top: 49%;
+      transform: translateX(25px);
+    }
   }
 
   &:hover::after,

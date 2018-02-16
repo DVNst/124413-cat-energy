@@ -7,7 +7,7 @@
   <title>HTML Academy: Cat energy</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- <style>
+  <style>
     HTML {
       background: url("cat-energy-index2-mobile.jpg") 50% 0 no-repeat;
     }
@@ -27,7 +27,7 @@
       opacity: 0.5;
     }
 
-    BODY > * {
+    /*BODY > * {
         outline: 2px solid deeppink;
     }
     BODY > * > * {
@@ -37,8 +37,8 @@
     BODY > * > * > * {
         outline: 2px dotted dodgerblue;
         outline-offset: -4px;
-    }
-  </style> -->
+    }*/
+  </style>
 </head>
 
 <body>
@@ -46,7 +46,13 @@
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--index">
         <a class="main-nav__logo logo-header">
-          <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/icon-logo-desktop.svg">
+
+            <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+
+            <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
+          </picture>
 
           <img src="img/logo-mobile-header.svg" width="101" height="18" class="logo-header__text" alt="Cat energy">
         </a>

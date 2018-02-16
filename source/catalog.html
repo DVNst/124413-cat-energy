@@ -46,7 +46,13 @@
     <div class="page-header__wrapper">
       <nav class="main-nav">
         <a href="index.html" class="main-nav__logo logo-header">
-          <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/icon-logo-desktop.svg">
+
+            <source media="(min-width: 768px)" srcset="img/icon-logo-tablet.svg">
+
+            <img src="img/icon-logo-mobile.svg" width="33" height="38" class="logo-header__image" alt="Логотип">
+          </picture>
 
           <img src="img/logo-mobile-header.svg" width="101" height="18" class="logo-header__text" alt="Cat energy">
         </a>
