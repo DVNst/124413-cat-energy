@@ -23,4 +23,19 @@
     background-color: $greendark;
     color: #99c684;
   }
+
+  &--grey {
+    background-color: $bg-grey;
+    color: $text-grey;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: $bg-grey;
+      color: #c3c3c3;
+    }
+  }
 }

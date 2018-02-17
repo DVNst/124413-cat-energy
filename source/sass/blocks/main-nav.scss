@@ -154,18 +154,6 @@
   color: $text-grey;
   text-decoration: none;
 
-  &:hover {
-    opacity: 0.75;
-  }
-
-  &:focus {
-    opacity: 0.75;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
   &--active {
     border-bottom: 1px solid $green;
   }
@@ -180,5 +168,16 @@
 
   @media (min-width: $desktop) {
     padding-bottom: 6px;
+  }
+}
+
+.main-nav__link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

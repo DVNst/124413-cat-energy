@@ -81,6 +81,10 @@
     border: 1px solid #ededed;
   }
 
+  &:hover::before {
+    border-color: $grey;
+  }
+
   @media (min-width: $tablet) {
     margin: 0;
     padding-left: 58px;
