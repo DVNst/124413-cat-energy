@@ -9,6 +9,19 @@
   text-decoration: none;
   color: $text-grey;
 
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__icon {
+      fill: $green;
+    }
+  }
+
   @media (min-width: $tablet) {
     margin-top: 8px;
   }
@@ -27,4 +40,8 @@
 .copyright__img {
   width: 27px;
   height: 34px;
+}
+
+.copyright__icon {
+  fill: #666666;
 }

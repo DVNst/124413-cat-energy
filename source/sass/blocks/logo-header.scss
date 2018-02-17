@@ -1,3 +1,16 @@
+.logo-header[href] {
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo-header__image {
   margin-right: 57px;
   width: 33px;

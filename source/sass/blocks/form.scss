@@ -76,6 +76,7 @@
 }
 
 .form__input {
+  position: relative;
   height: 24px;
   margin: 0 0 14px 14px;
   padding: 9px 15px 10px 15px;
@@ -87,6 +88,28 @@
   font-family: $primary-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444 inset;
+  }
+
+  &:active + .form__icon,
+  &:focus + .form__icon {
+    fill: $green;
+  }
+
+  &:active:invalid,
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282 inset;
+  }
+
+  &:active:invalid + .form__icon,
+  &:focus:invalid + .form__icon {
+    fill: #ff8282;
+  }
 
   &--weight {
     margin-left: 17px;
@@ -100,11 +123,23 @@
     margin-left: 12px;
     padding-left: 13px;
     padding-right: 32px;
+
+    background: url("../img/icon-mail.svg") no-repeat;
+    background-position: 93% 50%;
+    background-size: 17px 13px;
   }
 
   &--phone {
     margin-left: 10px;
     padding-right: 32px;
+
+    background: url("../img/icon-phone.svg") no-repeat;
+    background-position: 93% 50%;
+    background-size: 20px 20px;
+  }
+
+  &:disabled + .form__label {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
@@ -127,12 +162,16 @@
       margin-left: 19px;
       margin-right: 35px;
       padding: 9px 50px 11px 20px;
+
+      background-position: 96% 50%;
     }
 
     &--phone {
       margin-left: 16px;
       margin-right: 36px;
       padding: 8px 50px 11px 19px;
+
+      background-position: 97% 50%;
     }
   }
 
@@ -148,6 +187,8 @@
     &--phone {
       margin: 0;
       margin-left: 14px;
+
+      background-position: 96% 50%;
     }
   }
 }
@@ -234,6 +275,41 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 66px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet) {
+    right: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 20px;
+  }
+
+  &--mail {
+    top: 16px;
+
+    @media (min-width: $tablet) {
+      top: 20px;
+    }
+  }
+
+  &--phone {
+    top: 13px;
+    right: 14px;
+
+    @media (min-width: $tablet) {
+      top: 16px;
+      right: 52px;
+    }
+
+    @media (min-width: $desktop) {
+      right: 19px;
+    }
   }
 }
 
