@@ -82,12 +82,21 @@
   padding: 9px 15px 10px 15px;
 
   border: 1px solid $lightgrey;
+  outline: none;
 
   flex-grow: 1;
 
   font-family: $primary-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &:hover {
+    border-color: $grey;
+  }
 
   &:active,
   &:focus {
@@ -100,14 +109,12 @@
     fill: $green;
   }
 
-  &:active:invalid,
-  &:focus:invalid {
+  &--error {
     border: 1px solid #ff8282;
     box-shadow: 0 0 0 1px #ff8282 inset;
   }
 
-  &:active:invalid + .form__icon,
-  &:focus:invalid + .form__icon {
+  &--error + .form__icon {
     fill: #ff8282;
   }
 
@@ -136,10 +143,6 @@
     background: url("../img/icon-phone.svg") no-repeat;
     background-position: 93% 50%;
     background-size: 20px 20px;
-  }
-
-  &:disabled + .form__label {
-    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
@@ -239,6 +242,10 @@
     background-color: $white;
   }
 
+  &:hover::before {
+    box-shadow: 0 0 0 1px $grey;
+  }
+
   @media (min-width: $tablet) {
     padding: 17px 0 16px 58px;
 
@@ -255,7 +262,19 @@
   }
 }
 
-.form__radio:checked ~ .form__program {
+.form__radio:disabled + .form__program {
+  opacity: 0.3;
+
+  &::before {
+    box-shadow: 0 0 0 1px #bababa;
+  }
+
+  &:hover::before {
+    box-shadow: 0 0 0 1px #bababa;
+  }
+}
+
+.form__radio:checked + .form__program {
   &::before {
     background-color: $green;
   }
@@ -450,10 +469,25 @@
   padding: 10px 10px 10px 15px;
 
   border: 1px solid #ededed;
+  outline: none;
 
   font-family: $primary-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #444444;
+    box-shadow: 0 0 0 1px #444444 inset;
+  }
 
   @media (min-width: $tablet) {
     width: 100%;
@@ -493,6 +527,18 @@
 .form__checkbox:checked ~ .form__label {
   &::before {
     background-image: url("../img/icon-tick.svg");
+  }
+}
+
+.form__checkbox:disabled + .form__label {
+  opacity: 0.3;
+
+  &::before {
+    border-color: #bababa;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
   }
 }
 

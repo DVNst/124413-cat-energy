@@ -26,6 +26,13 @@
   @media (min-width: $tablet) {
     margin: 0 8px 0 9px;
   }
+}
+
+.social__link {
+  display: block;
+
+  width: 22px;
+  text-align: center;
 
   &:hover .social__icon,
   &:focus .social__icon {
@@ -36,13 +43,6 @@
     opacity: 0.3;
     fill: $green;
   }
-}
-
-.social__link {
-  display: block;
-
-  width: 22px;
-  text-align: center;
 
   @media (min-width: $tablet) {
     width: 30px;
@@ -61,6 +61,21 @@
   }
 
   @media (min-width: $tablet) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
     &--big {
       display: inline-block;
     }
