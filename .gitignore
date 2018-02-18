@@ -8,6 +8,7 @@
 node_modules/
 npm-debug.*
 source/css/*.css
+build/
 Thumbs.db
 cat-energy-catalog2-mobile.jpg
 cat-energy-catalog-desktop.jpg
