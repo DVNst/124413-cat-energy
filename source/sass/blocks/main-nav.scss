@@ -87,6 +87,10 @@
 
   list-style: none;
 
+  &--hidden {
+    display: none;
+  }
+
   @media (min-width: $tablet) {
     flex-direction: row;
   }
