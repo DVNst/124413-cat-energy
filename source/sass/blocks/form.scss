@@ -280,6 +280,10 @@
   }
 }
 
+.form__radio:focus + .form__program {
+  outline: thin dotted;
+}
+
 .form__contacts {
   margin: 0;
   margin-bottom: 14px;
@@ -528,6 +532,10 @@
   &::before {
     background-image: url("../img/icon-tick.svg");
   }
+}
+
+.form__checkbox:focus + .form__label {
+  outline: thin dotted;
 }
 
 .form__checkbox:disabled + .form__label {
