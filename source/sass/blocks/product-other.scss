@@ -86,39 +86,35 @@
 .product-other__volume {
   margin: 0;
 
-  &--grams {
-    //@extend .visually-hidden:not(:focus):not(:active);
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  @media (min-width: $tablet) {
-    //margin-right: 53px;
-
-    &--grams {
-      position: relative;
-      margin: 0;
-
-      width: auto;
-      height: auto;
-
-      clip-path: none;
-    }
-  }
-
   @media (min-width: $desktop) {
     margin-right: auto;
+  }
+}
+
+.product-other__volume-grams {
+  //@extend .visually-hidden:not(:focus):not(:active);
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin: 0;
+
+    width: auto;
+    height: auto;
+
+    clip-path: none;
   }
 }
 

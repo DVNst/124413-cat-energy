@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Oswald";
+  font-display: swap;
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   //font-style: normal;
@@ -7,6 +8,7 @@
 
 @font-face {
   font-family: "Oswald";
+  font-display: swap;
   src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
   font-weight: bold;
   //font-style: normal;
