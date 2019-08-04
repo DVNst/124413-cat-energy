@@ -17,7 +17,7 @@ var svgstore = require('gulp-svgstore');
 
 var server = require('browser-sync').create();
 
-var dir = 'build';
+var dir = 'docs';
 
 gulp.task('style', () =>
   gulp.src('source/sass/style.scss')
